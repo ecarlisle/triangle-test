@@ -1,0 +1,75 @@
+:root {
+  --color-background: hsl(201, 96%, 90%);
+  --color-border: hsl(201, 96%, 60%);
+  --color-border-dark: hsl(201, 96%, 30%);
+  --color-border-info: hsl(201, 96%, 40%);
+  --color-white: hsl(0, 0%, 100%);
+  --color-success: hsl(158, 95%, 24%);
+  --color-error: hsl(4, 90%, 38%);
+  min-width: 0;
+}
+
+#__next {
+  background: var(--color-background);
+  border: solid 1px var(--color-border);
+
+  font-family: sans-serif;
+  max-width: 992px;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  padding: 2rem;
+}
+
+p {
+  margin: 0 0 2rem;
+}
+
+.inputs {
+  display: flex;
+  justify-content: space-around;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+fieldset {
+  border: 0;
+}
+
+input {
+  border: solid 1px var(--color-border-dark);
+  display: block;
+  border-radius: 0.25rem;
+  margin: 0.5rem 0 1rem 0;
+  padding: 0.25rem;
+}
+
+button {
+  border: 0;
+  border-radius: 0.25rem;
+  color: var(--color-white);
+  display: block;
+  font-weight: 700;
+  margin: 0 auto;
+  background: var(--color-border-info);
+  padding: 0.5rem;
+}
+
+label {
+  display: block;
+  font-weight: 700;
+}
+
+legend {
+  display: block;
+  margin: 0 0 1rem;
+}
+
+.success {
+  color: var(--color-success);
+  
+}
+
+.error {
+  color: var(--color-error);
+}
